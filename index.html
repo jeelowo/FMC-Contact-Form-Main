@@ -12,32 +12,40 @@
 </head>
 <body>
   <main>
+    <h1>Contact Us</h1>
       <form>
-        <h1>Contact Us</h1>
-      
-        <div id="name-row">
-        <label for="firstname">First Name: *</label>
-        <input type="text" id="firstname" name="firstname" required>
-        <label for="lastname">Last Name: *</label>
-        <input type="text" id="lastname" name="lastname" required>
+        <div class="input-div">
+          <label for="firstname">First Name: *</label>
+          <input type="text" id="firstname" name="firstname" required>
         </div>
 
-        <label for="email">Email Address *</label>
-        <input type="email" id="email" name="email" required>
+        <div class="input-div">
+          <label for="lastname">Last Name: *</label>
+          <input type="text" id="lastname" name="lastname" required>
+        </div>
 
-        <label>Query Type *</label>
-        <fieldset id="query-type">
+        <div class="input-div">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <fieldset class="query-div"></fieldset>
+        <legend class="main-label">Query Type <span class="star-span">*</span></legend>
           <input type="radio" id="general" name="query" value="General Enquiry" required>
           <label for="general">General Enquiry</label>
           <input type="radio" id="support" name="query" value="Support Request">
           <label for="support">Support Request</label>
         </fieldset>      
 
-        <label for="message">Message *</label>
-        <textarea id="message" name="message" rows="5" cols="30" required maxlength="1000"></textarea>
+        <div>
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" cols="30" required maxlength="1000"></textarea>
+        </div>
 
-        <input id="consent" name="consent" type="checkbox" required>
-        <label for="consent">I consent to being contacted by the team *</label>
+        <div class="input-div">
+          <input id="consent" name="consent" type="checkbox" required>
+          <label for="consent">I consent to being contacted by the team *</label>
+        </div>
 
         <button type="submit">Submit</button>
       </form>

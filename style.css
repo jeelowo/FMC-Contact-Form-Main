@@ -13,6 +13,24 @@
     font-weight: 700;
 }
 
+body{
+    background-color: hsl(148, 38%, 91%);
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main{
+    max-width: 480px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+}
+
 fieldset {
     border: none;
     padding: 0;
@@ -20,8 +38,15 @@ fieldset {
 }
 
 form{
-    font-family: "Karla", sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+}
+
+button{
+    background-color: hsl(169, 82%, 27%);
+    border-radius: 8px;
+    color: white;
+    font-family: inherit;
+    padding: 10px;
+    border: none;
 }
