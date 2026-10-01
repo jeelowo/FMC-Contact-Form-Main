@@ -25,10 +25,27 @@ body{
     flex-direction: column;
 }
 
+form{
+    display: flex;
+}
+
+div{
+    width: 100%;
+}
+
+h1{
+
+    padding: 12px 0px 0px 24px;
+    margin-bottom: 12px;
+    font-size: larger;
+}
+
 main{
+    display: flex;
+    flex-direction: column;
     max-width: 480px;
     background-color: hsl(0, 0%, 100%);
-    padding: 20px;
+    color: #2A4144;
 }
 
 fieldset {
@@ -38,8 +55,20 @@ fieldset {
 }
 
 form{
+    font-family: inherit;
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+    padding: 0px 24px 24px;
+}
+
+form label{
+    font-size: x-small;
+}
+
+legend{
+    font-size: x-small;
 }
 
 button{
@@ -49,4 +78,35 @@ button{
     font-family: inherit;
     padding: 10px;
     border: none;
+}
+
+input, .radio-div, textarea{
+    border: 1px solid #86A2A5;
+}  
+
+.consent-div input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #86A2A5;
+    border-radius: 2px;
+    background: white;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.consent-div input:checked {
+    border: none;
+    background: url("./images/icon-checkbox-check.svg") center/contain no-repeat;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#asterisk{
+    color: hsl(169, 82%, 27%);;
 }

@@ -14,16 +14,18 @@
   <main>
     <h1>Contact Us</h1>
       <form>
-        <div class="input-div">
-          <label for="firstname">First Name: <span class="asterisk">*</span></label>
-          <input type="text" id="firstname" name="firstname" required>
-          <p id="first-name-error" aria-live="polite" hidden>This field is required.</p>
-        </div>
+        <div class="grid">
+          <div class="input-div">
+            <label for="firstname">First Name: <span class="asterisk">*</span></label>
+            <input type="text" id="firstname" name="firstname" required>
+            <p id="first-name-error" aria-live="polite" hidden>This field is required.</p>
+          </div>
 
-        <div class="input-div">
-          <label for="lastname">Last Name: <span class="asterisk">*</span></label>
-          <input type="text" id="lastname" name="lastname" required>
-          <p id="last-name-error" aria-live="polite" hidden>This field is required.</p>
+          <div class="input-div">
+            <label for="lastname">Last Name: <span class="asterisk">*</span></label>
+            <input type="text" id="lastname" name="lastname" required>
+            <p id="last-name-error" aria-live="polite" hidden>This field is required.</p>
+          </div>
         </div>
 
         <div class="input-div">
@@ -34,11 +36,17 @@
 
         <fieldset class="query-div"></fieldset>
         <legend class="main-label">Query Type <span class="asterisk">*</span></legend>
-          <input type="radio" id="general" name="query" value="General Enquiry" required>
-          <label for="general">General Enquiry</label>
+          <div class="grid">
+            <label for="general" class="radio-div">
+            <input type="radio" id="general" name="query" value="General Enquiry" required>
+            <span>General Enquiry</span>
+            </label>
 
-          <input type="radio" id="support" name="query" value="Support Request">
-          <label for="support">Support Request</label>
+            <label for="support" class="radio-div">
+            <input type="radio" id="support" name="query" value="Support Request">
+            <span>Support Request</span>
+            </label>
+          </div>
 
           <p id="query-error" aria-live="polite" hidden>Please select a query type.</p>
         </fieldset>      
@@ -58,7 +66,9 @@
         <button type="submit">Submit</button>
       </form>
   </main>
-<!--   
+
+
+  <!--   
   <div></div>
   
   Contact Us
@@ -75,11 +85,11 @@
 
   Query Type
   General Enquiry
-  Support Request
+  Support   
   Please select a query type
 
   Message
-  This field is required
+  This field is requiRequestred
 
   I consent to being contacted by the team
   To submit this form, please consent to being contacted
