@@ -15,36 +15,44 @@
     <h1>Contact Us</h1>
       <form>
         <div class="input-div">
-          <label for="firstname">First Name: *</label>
+          <label for="firstname">First Name: <span class="asterisk">*</span></label>
           <input type="text" id="firstname" name="firstname" required>
+          <p id="first-name-error" aria-live="polite" hidden>This field is required.</p>
         </div>
 
         <div class="input-div">
-          <label for="lastname">Last Name: *</label>
+          <label for="lastname">Last Name: <span class="asterisk">*</span></label>
           <input type="text" id="lastname" name="lastname" required>
+          <p id="last-name-error" aria-live="polite" hidden>This field is required.</p>
         </div>
 
         <div class="input-div">
-          <label for="email">Email Address *</label>
+          <label for="email">Email Address <span class="asterisk">*</span></label>
           <input type="email" id="email" name="email" required>
+          <p id="email-error" aria-live="polite" hidden>Please enter a valid email address.</p>
         </div>
 
         <fieldset class="query-div"></fieldset>
-        <legend class="main-label">Query Type <span class="star-span">*</span></legend>
+        <legend class="main-label">Query Type <span class="asterisk">*</span></legend>
           <input type="radio" id="general" name="query" value="General Enquiry" required>
           <label for="general">General Enquiry</label>
+
           <input type="radio" id="support" name="query" value="Support Request">
           <label for="support">Support Request</label>
-        </fieldset>      
 
+          <p id="query-error" aria-live="polite" hidden>Please select a query type.</p>
+        </fieldset>      
+        
         <div>
-          <label for="message">Message *</label>
+          <label for="message">Message <span class="asterisk">*</span></label>
           <textarea id="message" name="message" rows="5" cols="30" required maxlength="1000"></textarea>
+          <p id="message-error" aria-live="polite" hidden>This field is required.</p>
         </div>
 
         <div class="input-div">
           <input id="consent" name="consent" type="checkbox" required>
-          <label for="consent">I consent to being contacted by the team *</label>
+          <label for="consent">I consent to being contacted by the team <span class="asterisk">*</span></label>
+          <p id="consent-error" aria-live="polite" hidden>  To submit this form, please consent to being contacted.</p>
         </div>
 
         <button type="submit">Submit</button>
