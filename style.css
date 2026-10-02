@@ -55,7 +55,7 @@ fieldset {
 }
 
 form{
-    font-family: inherit;
+    font-family: "Karla", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -75,38 +75,115 @@ button{
     background-color: hsl(169, 82%, 27%);
     border-radius: 8px;
     color: white;
-    font-family: inherit;
+    font-family: "Karla", sans-serif;
     padding: 10px;
     border: none;
+    cursor: pointer;
 }
 
-input, .radio-div, textarea{
-    border: 1px solid #86A2A5;
-}  
+button:hover {
+    background-color: #096653;
+}
 
-.consent-div input {
+#consent:hover {
+    background-color: #096653;
+}
+
+input, textarea{
+    border: 1px solid #86A2A5;
+    font-family: "Karla", sans-serif;
+    font-size: x-small;
+}
+
+input:not([type="checkbox"]):not([type="radio"]){
+    font-family: "Karla", sans-serif;
+    padding: 12px;
+}
+
+.radio-div{
+    box-sizing: border-box;
+    height: 32px;
+    width: 100%;
+    border: 1px solid #86A2A5;
+    border-radius: 4px;
+    background: transparent;
+}
+
+.consent-div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input-div input:not([type="checkbox"]):not([type="radio"]) {
+    box-sizing: border-box;
+    height: 32px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+#consent{
     appearance: none;
     -webkit-appearance: none;
-    width: 18px;
-    height: 18px;
-    border: 2px solid #86A2A5;
+    width: 12px;
+    height: 12px;
+    padding: 0px;
+    margin: 0px 16px 0px 0px;
+    border: 1px solid #86A2A5;
     border-radius: 2px;
     background: white;
     cursor: pointer;
     flex-shrink: 0;
 }
 
-.consent-div input:checked {
+#consent:checked {
     border: none;
-    background: url("./images/icon-checkbox-check.svg") center/contain no-repeat;
+    background: url("./assets/images/icon-checkbox-check.svg") center/contain no-repeat;
 }
 
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    column-gap: 8px;
 }
 
-#asterisk{
+.grid label{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.grid label input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 0 0 12px;
+    border: 1px solid #86A2A5;
+    border-radius: 50%;
+    background: white;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.grid input[type="radio"]:checked {
+    border: none;
+    background: url("./assets/images/icon-radio-selected.svg") center/contain no-repeat;
+    background-color: transparent;
+}
+
+.asterisk{
     color: hsl(169, 82%, 27%);;
 }
+
+#message{
+    padding: 12px;
+    width: 100%;
+    resize: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+

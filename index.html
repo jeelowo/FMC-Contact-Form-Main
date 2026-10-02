@@ -34,22 +34,22 @@
           <p id="email-error" aria-live="polite" hidden>Please enter a valid email address.</p>
         </div>
 
-        <fieldset class="query-div"></fieldset>
-        <legend class="main-label">Query Type <span class="asterisk">*</span></legend>
+        <fieldset class="query-div">
+          <legend class="main-label">Query Type <span class="asterisk">*</span></legend>
           <div class="grid">
             <label for="general" class="radio-div">
-            <input type="radio" id="general" name="query" value="General Enquiry" required>
-            <span>General Enquiry</span>
+              <input type="radio" id="general" name="query" value="General Enquiry" required>
+              <span>General Enquiry</span>
             </label>
 
             <label for="support" class="radio-div">
-            <input type="radio" id="support" name="query" value="Support Request">
-            <span>Support Request</span>
+              <input type="radio" id="support" name="query" value="Support Request">
+              <span>Support Request</span>
             </label>
           </div>
 
           <p id="query-error" aria-live="polite" hidden>Please select a query type.</p>
-        </fieldset>      
+        </fieldset>
         
         <div>
           <label for="message">Message <span class="asterisk">*</span></label>
@@ -57,7 +57,7 @@
           <p id="message-error" aria-live="polite" hidden>This field is required.</p>
         </div>
 
-        <div class="input-div">
+        <div id="consent-div" class="input-div">
           <input id="consent" name="consent" type="checkbox" required>
           <label for="consent">I consent to being contacted by the team <span class="asterisk">*</span></label>
           <p id="consent-error" aria-live="polite" hidden>  To submit this form, please consent to being contacted.</p>
