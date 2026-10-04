@@ -130,6 +130,8 @@ input:not([type="checkbox"]):not([type="radio"]){
     border-color: hsl(169, 82%, 27%);
 }
 
+
+
 .input-div input.error, textarea.error{
     border: 1px solid hsl(0, 66%, 54%);
 }
@@ -197,7 +199,10 @@ input:not([type="checkbox"]):not([type="radio"]){
     background: url("./assets/images/icon-radio-selected.svg") center/contain no-repeat;
     background-color: transparent;
 }
-
+.radio-div:has(input[type="radio"]:checked){
+    background-color: hsl(148, 38%, 91%);
+    border-color: hsl(169, 82%, 27%);
+}
 .asterisk{
     color: hsl(169, 82%, 27%);;
 }
