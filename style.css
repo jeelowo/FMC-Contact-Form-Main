@@ -93,6 +93,7 @@ input, textarea{
     border: 1px solid #86A2A5;
     font-family: "Karla", sans-serif;
     font-size: x-small;
+    outline: none;
 }
 
 input:not([type="checkbox"]):not([type="radio"]){
@@ -122,11 +123,16 @@ input:not([type="checkbox"]):not([type="radio"]){
     border-radius: 4px;
 }
 
-.input-div input.error {
+.input-div input.error, textarea.error{
     border: 1px solid hsl(0, 66%, 54%);
 }
 
-#first-name-error{
+#first-name-error, 
+#last-name-error, 
+#message-error, 
+#email-error,
+#consent-error,
+#query-error{
     font-size: x-small;
     color: hsl(0, 66%, 54%);
 }
