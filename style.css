@@ -123,6 +123,13 @@ input:not([type="checkbox"]):not([type="radio"]){
     border-radius: 4px;
 }
 
+.input-div input:not([type="checkbox"]):not([type="radio"]):hover,
+.input-div input:not([type="checkbox"]):not([type="radio"]):focus-visible,
+#message:hover,
+#message:focus-visible {
+    border-color: hsl(169, 82%, 27%);
+}
+
 .input-div input.error, textarea.error{
     border: 1px solid hsl(0, 66%, 54%);
 }
@@ -136,6 +143,7 @@ input:not([type="checkbox"]):not([type="radio"]){
     font-size: x-small;
     color: hsl(0, 66%, 54%);
 }
+
 
 #consent{
     appearance: none;
