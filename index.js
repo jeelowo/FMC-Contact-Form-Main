@@ -1,18 +1,19 @@
-const firstName = document.querySelector("#firstname");
-const lastName = document.querySelector("#lastname");
-const message = document.querySelector("#message");
-const email = document.querySelector("#email");
-const consent = document.querySelector("#consent");
-const general = document.querySelector("#general");
-const support = document.querySelector("#support");
+const firstName = document.getElementById("firstname");
+const lastName = document.getElementById("lastname");
+const message = document.getElementById("message");
+const email = document.getElementById("email");
+const consent = document.getElementById("consent");
+const general = document.getElementById("general");
+const support = document.getElementById("support");
 
-const firstNameError = document.querySelector("#first-name-error");
-const lastNameError = document.querySelector("#last-name-error");
-const messageError = document.querySelector("#message-error");
-const emailError = document.querySelector("#email-error");
-const consentError = document.querySelector("#consent-error");
-const queryError = document.querySelector("#query-error");
+const firstNameError = document.getElementById("first-name-error");
+const lastNameError = document.getElementById("last-name-error");
+const messageError = document.getElementById("message-error");
+const emailError = document.getElementById("email-error");
+const consentError = document.getElementById("consent-error");
+const queryError = document.getElementById("query-error");
 
+const successToast = document.getElementById("success-toast");
 const form = document.querySelector("form");
 
 form.noValidate = true;
